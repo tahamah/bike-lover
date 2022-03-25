@@ -5,3 +5,21 @@
     -webkit-box-shadow: 1px 1px 25px 3px rgba(0, 0, 0, 0.53);
     box-shadow: 1px 1px 25px 3px rgba(0, 0, 0, 0.53);
 }
+
+.product-img {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.add-btn {
+    border-top: 1px solid #198754;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transition: 0.5s;
+}
+.add-btn:hover {
+    background-color: #198754;
+    color: #fff;
+}

@@ -16,8 +16,8 @@ const Shope = () => {
                     <Products key={product.id} products={product}></Products>
                 ))}
             </div>
-            <div className="select-container ms-5">
-                <h1 className=" text-center">Summary</h1>
+            <div className="select-container ms-5 mt-5">
+                <h4 className=" text-center">Slected</h4>
             </div>
         </div>
     )
