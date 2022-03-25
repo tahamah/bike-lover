@@ -11,13 +11,13 @@ const Shope = () => {
     }, [])
     return (
         <div className="shope-container m-5 ">
-            <div className="card-container row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div className="card-container row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mt-5">
                 {products.map((product) => (
                     <Products key={product.id} products={product}></Products>
                 ))}
             </div>
             <div className="select-container ms-5">
-                <h1 className=" text-center">summary</h1>
+                <h1 className=" text-center">Summary</h1>
             </div>
         </div>
     )

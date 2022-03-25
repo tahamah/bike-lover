@@ -1,18 +1,19 @@
 import React from 'react'
+import './Products.css'
 
 const Products = ({ products }) => {
     const { name, price, img } = products
     console.log(products)
     return (
         <div className="col">
-            <div className="card h-100">
-                <img src={img} className="card-img-top" alt="" />
+            <div className="card  rounded rounded-3 border-success mx-2 mb-3 h-100 product-container">
+                <img src={img} className="card-img-top rounded-top" alt="" />
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
                     <h5 className="card-text">Price: ${price}</h5>
                 </div>
-                <div className="card-f mt-5 text-center">
-                    <button className=" w-100 btn btn-outline-success">
+                <div className="card-f mt-2 text-center">
+                    <button className="rounded-bottom  w-100 p-2 fw-bolder btn btn-outline-success">
                         Add to Cart
                     </button>
                 </div>
