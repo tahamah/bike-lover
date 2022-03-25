@@ -13,11 +13,13 @@ const Shope = () => {
     }, [])
     const handleAddCart = (product) => {
         if (selectedBikes.length >= 4) {
-            // alart("")
+            return
         } else {
-            console.log(selectedBikes)
             setSelectedBikes([...selectedBikes, product])
         }
+    }
+    const handleTryAgain = () => {
+        setSelectedBikes([])
     }
     return (
         <div className="shope-container ms-5 ">
@@ -38,6 +40,10 @@ const Shope = () => {
                         selectedBike={selectedBike}
                     ></SelectedBike>
                 ))}
+                <div>
+                    <button>Choose One For Me</button>
+                    <button onClick={handleTryAgain}>Try Again</button>
+                </div>
             </div>
         </div>
     )
