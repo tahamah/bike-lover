@@ -16,7 +16,6 @@ Modal.setAppElement('#root')
 
 const ChooseTryBtn = ({ handleTryAgain, handleChooseOne, chooseOne }) => {
     const { name, img } = chooseOne
-    console.log(chooseOne)
     const [modalIsOpen, setIsOpen] = React.useState(false)
 
     function openModal() {
