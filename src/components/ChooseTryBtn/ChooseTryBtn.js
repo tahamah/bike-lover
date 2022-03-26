@@ -1,9 +1,15 @@
 import React from 'react'
 
-const ChooseTryBtn = ({ handleTryAgain }) => {
+const ChooseTryBtn = ({ handleTryAgain, handleChooseOne, chooseOne }) => {
+    console.log(chooseOne)
     return (
         <div>
-            <button className="btn mb-2 btn-outline-success">Choose One</button>
+            <button
+                className="btn mb-2 btn-outline-success"
+                onClick={handleChooseOne}
+            >
+                Choose One
+            </button>
 
             <button
                 className="btn  btn-outline-danger"
