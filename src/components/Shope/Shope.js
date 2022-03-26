@@ -41,8 +41,17 @@ const Shope = () => {
                     ></SelectedBike>
                 ))}
                 <div>
-                    <button>Choose One For Me</button>
-                    <button onClick={handleTryAgain}>Try Again</button>
+                    <div className="mx-3 my-5">
+                        <button className="btn mb-2 btn-outline-success">
+                            Choose One
+                        </button>
+                        <button
+                            className="btn  btn-outline-danger"
+                            onClick={handleTryAgain}
+                        >
+                            Try Again
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
