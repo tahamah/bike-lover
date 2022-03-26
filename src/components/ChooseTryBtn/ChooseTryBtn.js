@@ -1,5 +1,7 @@
 import React from 'react'
 import Modal from 'react-modal'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChampagneGlasses, faXmark } from '@fortawesome/free-solid-svg-icons'
 const customStyles = {
     content: {
         top: '50%',
@@ -48,9 +50,27 @@ const ChooseTryBtn = ({ handleTryAgain, handleChooseOne, chooseOne }) => {
                 style={customStyles}
                 contentLabel="Example Modal"
             >
-                <button onClick={closeModal}>close</button>
-                <img className="w-50" src={img} alt="" />
-                <h1>{name}</h1>
+                <div className="d-flex flex-column ">
+                    <div>
+                        <button
+                            className="btn btn-outline-danger"
+                            onClick={closeModal}
+                        >
+                            <FontAwesomeIcon icon={faXmark} />
+                        </button>
+                    </div>
+                    <div className="text-center container w-50">
+                        <h1 className="text-warning">
+                            Congratulations!!
+                            <FontAwesomeIcon
+                                className="text-danger ms-2"
+                                icon={faChampagneGlasses}
+                            />
+                        </h1>
+                        <img className="img-fluid pt-5" src={img} alt="" />
+                        <h3>{name}</h3>
+                    </div>
+                </div>
             </Modal>
         </div>
     )
