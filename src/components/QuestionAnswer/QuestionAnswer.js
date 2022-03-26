@@ -8,33 +8,30 @@ const QuestionAnswer = () => {
             </h1>
             <section className="container px-5 d-flex mb-5 justify-content-between">
                 <article className="w-50 mx-4 p-5 border rounded">
-                    <h4>
-                        What is the difference between local storage vs
-                        secretion storage?
-                    </h4>
+                    <h4>How react works?</h4>
                     <p className="mt-3 text-justify">
-                        Local Storage and Session Storage are almost the same.
-                        They store data on the client side. But, the most
-                        difference is here- <br />
-                        Local Storage can store a max of 10MB of data and
-                        Secction Storage can store a max of 5MB of data.And the
-                        Other difference is Local Storage can save data after
-                        reload.But Section Storage can't. The data of session
-                        storage delete automatically but The data of local
-                        storage doesn't delete automatically.
+                        React is a javascript library, not framework. It creates
+                        user interfaces in a predictable way with components and
+                        handle only user interfaces. It is a declarative,
+                        efficient, and flexible JavaScript library for building
+                        user interfaces. First,the JSX gets converted to
+                        react.creatElement function calls. Then each of them
+                        returns the appropriate object. All react does is creat
+                        a tree of elements. This warks very fast.
                     </p>
                 </article>
 
                 <article className="w-50 mx-4 p-5 border rounded">
-                    <h4>How does javascript event loop work?</h4>
-                    <p className="mt-3 text-justify">
-                        Javascript event loop and Javascript basic for loop are
-                        almost the same. There are three main things in the
-                        event loop, they are - Stack, Queue, and Heap. Stack
-                        works first. After that Queue. Stack works sequentially
-                        one by one. And Queue works after finishing Stack's
-                        works. It works asynchronously. And Heap works on memory
-                        issues.
+                    <h4>What is the Differences between props and state?</h4>
+                    <p className="mt-3">
+                        Props are used for communication with other components.
+                        But We can't access state in child components. Props are
+                        read-only property. We can't change the value of props.
+                        But State is both read and write it can be changed
+                        asynchronously. Props are immutable. The State is
+                        mutable.Props are allow to pass data from on component
+                        to another components as argument. But State holds
+                        information about the state of the component
                     </p>
                 </article>
             </section>
