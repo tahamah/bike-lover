@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import Shope from './components/Shope/Shope'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopyright } from '@fortawesome/free-solid-svg-icons'
+import QuestionAnswer from './components/QuestionAnswer/QuestionAnswer'
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <div className="container bg-white rounded mb-5 pb-5">
                 <Header></Header>
                 <Shope></Shope>
+                <QuestionAnswer></QuestionAnswer>
             </div>
             <footer className="text-center footer ">
                 <p className="mb-0 ">
