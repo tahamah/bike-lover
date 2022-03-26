@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer'
 function App() {
     return (
         <div>
-            <div className="container bg-white rounded ">
+            <div className="container bg-white">
                 <Header></Header>
                 <Shope></Shope>
                 <QuestionAnswer></QuestionAnswer>
