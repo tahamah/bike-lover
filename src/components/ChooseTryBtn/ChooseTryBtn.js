@@ -13,6 +13,7 @@ const customStyles = {
 Modal.setAppElement('#root')
 
 const ChooseTryBtn = ({ handleTryAgain, handleChooseOne, chooseOne }) => {
+    const { name, img } = chooseOne
     console.log(chooseOne)
     const [modalIsOpen, setIsOpen] = React.useState(false)
 
@@ -23,13 +24,15 @@ const ChooseTryBtn = ({ handleTryAgain, handleChooseOne, chooseOne }) => {
     function closeModal() {
         setIsOpen(false)
     }
+
+    const model = () => {
+        handleChooseOne()
+        openModal()
+    }
+
     return (
         <div>
-            <button onClick={openModal}>Open Modal</button>
-            <button
-                className="btn mb-2 btn-outline-success"
-                onClick={handleChooseOne}
-            >
+            <button className="btn mb-2 btn-outline-success" onClick={model}>
                 Choose One
             </button>
 
@@ -46,7 +49,8 @@ const ChooseTryBtn = ({ handleTryAgain, handleChooseOne, chooseOne }) => {
                 contentLabel="Example Modal"
             >
                 <button onClick={closeModal}>close</button>
-                <h1>Done</h1>
+                <img className="w-50" src={img} alt="" />
+                <h1>{name}</h1>
             </Modal>
         </div>
     )
