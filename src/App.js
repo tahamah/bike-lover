@@ -1,24 +1,18 @@
 import './App.css'
 import Header from './components/Header/Header'
 import Shope from './components/Shope/Shope'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 import QuestionAnswer from './components/QuestionAnswer/QuestionAnswer'
+import Footer from './components/Footer/Footer'
 
 function App() {
     return (
         <div>
-            <div className="container bg-white rounded mb-5 pb-5">
+            <div className="container bg-white rounded ">
                 <Header></Header>
                 <Shope></Shope>
                 <QuestionAnswer></QuestionAnswer>
+                <Footer></Footer>
             </div>
-            <footer className="text-center footer ">
-                <p className="mb-0 ">
-                    <FontAwesomeIcon icon={faCopyright} /> copyright 2022 bike
-                    lover
-                </p>
-            </footer>
         </div>
     )
 }
