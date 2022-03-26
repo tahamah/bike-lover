@@ -1,8 +1,3 @@
-.shope-container {
-    display: grid;
-    grid-template-columns: 10fr 3fr;
-}
-
 .selected-container {
     background-color: antiquewhite;
     min-height: 300px;
@@ -10,15 +5,4 @@
     border-radius: 30px;
     position: sticky;
     top: 0;
-}
-
-@media screen and (max-width: 992px) {
-    .shope-container {
-        grid-template-columns: 10fr 5fr;
-    }
-}
-@media screen and (max-width: 766px) {
-    .shope-container {
-        grid-template-columns: 1fr 1fr;
-    }
 }

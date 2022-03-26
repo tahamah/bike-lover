@@ -3,7 +3,7 @@ import React from 'react'
 const QuestionAnswer = () => {
     return (
         <div>
-            <h1 className="text-center m-5 mb-4">
+            {/* <h1 className="text-center m-5 mb-4">
                 Question <span className="text-warning"> and Answer</span>
             </h1>
             <section className="container px-5 d-flex mb-5 justify-content-between">
@@ -34,7 +34,7 @@ const QuestionAnswer = () => {
                         information about the state of the component
                     </p>
                 </article>
-            </section>
+            </section> */}
         </div>
     )
 }

@@ -28,17 +28,19 @@ const Shope = () => {
         setChooseOne(selectedBikes[rand])
     }
     return (
-        <div className="shope-container ms-5 ">
-            <div className="card-container row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mt-5">
-                {products.map((product) => (
-                    <Products
-                        key={product.id}
-                        product={product}
-                        handleAddCart={handleAddCart}
-                    ></Products>
-                ))}
+        <div className="shope-container p-5 row ">
+            <div className="col-12 mb-5 col-md-9">
+                <div className="card-container row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mt-5">
+                    {products.map((product) => (
+                        <Products
+                            key={product.id}
+                            product={product}
+                            handleAddCart={handleAddCart}
+                        ></Products>
+                    ))}
+                </div>
             </div>
-            <div className="selected-container m-5">
+            <div className="selected-container col-12 col-md-3 ">
                 <h4 className=" text-center my-5">Selected Bike</h4>
                 {selectedBikes.map((selectedBike) => (
                     <SelectedBike
