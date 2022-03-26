@@ -34,16 +34,21 @@ const ChooseTryBtn = ({ handleTryAgain, handleChooseOne, chooseOne }) => {
 
     return (
         <div>
-            <button className="btn mb-2 btn-outline-success" onClick={model}>
-                Choose One
-            </button>
+            <div className="d-flex flex-column">
+                <button
+                    className="btn mb-2 btn-outline-success"
+                    onClick={model}
+                >
+                    Choose One
+                </button>
 
-            <button
-                className="btn  btn-outline-danger"
-                onClick={handleTryAgain}
-            >
-                Try Again
-            </button>
+                <button
+                    className="btn mb-2 btn-outline-danger"
+                    onClick={handleTryAgain}
+                >
+                    Try Again
+                </button>
+            </div>
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}

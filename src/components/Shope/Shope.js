@@ -28,7 +28,7 @@ const Shope = () => {
         setChooseOne(selectedBikes[rand])
     }
     return (
-        <div className="shope-container p-5 row ">
+        <div className="p-5 row">
             <div className="col-12 mb-5 col-md-9">
                 <div className="card-container row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mt-5">
                     {products.map((product) => (
