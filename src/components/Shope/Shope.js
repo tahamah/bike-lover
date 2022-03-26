@@ -8,7 +8,6 @@ const Shope = () => {
     const [products, setProducts] = useState([])
     const [selectedBikes, setSelectedBikes] = useState([])
     const [chooseOne, setChooseOne] = useState([])
-    // console.log(chooseOne)
     useEffect(() => {
         fetch('data.json')
             .then((res) => res.json())
@@ -27,7 +26,6 @@ const Shope = () => {
     const handleChooseOne = () => {
         const rand = Math.floor(Math.random() * selectedBikes.length)
         setChooseOne(selectedBikes[rand])
-        // console.log(selectedBikes[rand])
     }
     return (
         <div className="shope-container ms-5 ">

@@ -8,7 +8,8 @@ const Header = () => {
                 Hello!!
                 <span className=" text-danger fw-bolder ms-3">Bike Lover</span>
             </h1>
-            <h1>Choose Minimum Four Bikes</h1>
+            <h1>Choose Four bikes</h1>
+            <h2>I will choose one</h2>
         </div>
     )
 }

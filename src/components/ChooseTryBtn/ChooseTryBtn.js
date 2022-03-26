@@ -67,7 +67,8 @@ const ChooseTryBtn = ({ handleTryAgain, handleChooseOne, chooseOne }) => {
                                 icon={faChampagneGlasses}
                             />
                         </h1>
-                        <img className="img-fluid pt-5" src={img} alt="" />
+                        <h2 className="pt-5">This is chosen for you</h2>
+                        <img className="img-fluid " src={img} alt="" />
                         <h3>{name}</h3>
                     </div>
                 </div>
