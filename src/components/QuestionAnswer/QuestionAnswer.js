@@ -3,11 +3,11 @@ import React from 'react'
 const QuestionAnswer = () => {
     return (
         <div>
-            {/* <h1 className="text-center m-5 mb-4">
+            <h1 className="text-center m-5 mb-4">
                 Question <span className="text-warning"> and Answer</span>
             </h1>
-            <section className="container px-5 d-flex mb-5 justify-content-between">
-                <article className="w-50 mx-4 p-5 border rounded">
+            <section className="container px-5 row mb-5 ">
+                <article className="w-50 mx-4 p-5 border mb-3 col col-mb-6 rounded">
                     <h4>How react works?</h4>
                     <p className="mt-3 text-justify">
                         React is a javascript library, not framework. It creates
@@ -21,7 +21,7 @@ const QuestionAnswer = () => {
                     </p>
                 </article>
 
-                <article className="w-50 mx-4 p-5 border rounded">
+                <article className="w-50 mx-4 p-5 border mb-3 col col-mb-6 rounded">
                     <h4>What is the Differences between props and state?</h4>
                     <p className="mt-3">
                         Props are used for communication with other components.
@@ -34,7 +34,7 @@ const QuestionAnswer = () => {
                         information about the state of the component
                     </p>
                 </article>
-            </section> */}
+            </section>
         </div>
     )
 }
