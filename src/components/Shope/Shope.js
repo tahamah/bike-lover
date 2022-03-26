@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import ChooseTryBtn from '../ChooseTryBtn/ChooseTryBtn'
 import Products from '../Products/Products'
 import SelectedBike from '../SelectedBike/SelectedBike'
 import './Shope.css'
@@ -40,18 +41,11 @@ const Shope = () => {
                         selectedBike={selectedBike}
                     ></SelectedBike>
                 ))}
-                <div>
-                    <div className="mx-3 my-5">
-                        <button className="btn mb-2 btn-outline-success">
-                            Choose One
-                        </button>
-                        <button
-                            className="btn  btn-outline-danger"
-                            onClick={handleTryAgain}
-                        >
-                            Try Again
-                        </button>
-                    </div>
+
+                <div className="mx-3 my-5">
+                    <ChooseTryBtn
+                        handleTryAgain={handleTryAgain}
+                    ></ChooseTryBtn>
                 </div>
             </div>
         </div>
