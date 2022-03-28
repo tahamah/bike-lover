@@ -15,9 +15,16 @@ const Shope = () => {
     }, [])
     const handleAddCart = (product) => {
         if (selectedBikes.length >= 4) {
-            return
+            alert("Ops!! You can't add more than 4 items.")
         } else {
-            setSelectedBikes([...selectedBikes, product])
+            const exist = selectedBikes.find(
+                (products) => products.id === product.id
+            )
+            if (!exist) {
+                setSelectedBikes([...selectedBikes, product])
+            } else {
+                alert('Hello!! It already Selected')
+            }
         }
     }
     const handleTryAgain = () => {
