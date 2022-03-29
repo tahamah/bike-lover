@@ -23,7 +23,7 @@ const Shope = () => {
             if (!exist) {
                 setSelectedBikes([...selectedBikes, product])
             } else {
-                alert('Hello!! It already Selected.')
+                alert("Hello!! It's already Selected.")
             }
         }
     }
