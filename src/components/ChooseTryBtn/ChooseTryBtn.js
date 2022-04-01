@@ -24,14 +24,9 @@ const ChooseTryBtn = ({ handleTryAgain, handleChooseOne, chooseOne }) => {
     function closeModal() {
         setIsOpen(false)
     }
-
     const model = () => {
-        if (name !== undefined) {
-            handleChooseOne()
-            openModal()
-        } else {
-            alert('Please, Select any One!')
-        }
+        handleChooseOne()
+        openModal()
     }
 
     return (
