@@ -39,8 +39,12 @@ const Shope = () => {
         setSelectedBikes([])
     }
     const handleChooseOne = () => {
-        const rand = Math.floor(Math.random() * selectedBikes.length)
-        setChooseOne(selectedBikes[rand])
+        if (selectedBikes.length === 0) {
+            return
+        } else {
+            const rand = Math.floor(Math.random() * selectedBikes.length)
+            setChooseOne(selectedBikes[rand])
+        }
     }
     return (
         <div className="p-5 row">
