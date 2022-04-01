@@ -13,6 +13,14 @@ const Shope = () => {
             .then((res) => res.json())
             .then((data) => setProducts(data))
     }, [])
+
+    const removeSelectedBikes = (pd) => {
+        const rest = selectedBikes.filter(
+            (selectedBike) => selectedBike.id !== pd.id
+        )
+        setSelectedBikes(rest)
+    }
+
     const handleAddCart = (product) => {
         if (selectedBikes.length >= 4) {
             alert("Oops!! You can't add more than four.")
@@ -53,6 +61,7 @@ const Shope = () => {
                     <SelectedBike
                         key={selectedBike.id}
                         selectedBike={selectedBike}
+                        removeSelectedBikes={removeSelectedBikes}
                     ></SelectedBike>
                 ))}
 
