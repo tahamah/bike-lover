@@ -20,6 +20,9 @@ const Shope = () => {
         )
         setSelectedBikes(rest)
     }
+    const handleTryAgain = () => {
+        setSelectedBikes([])
+    }
 
     const handleAddCart = (product) => {
         if (selectedBikes.length >= 4) {
@@ -35,9 +38,7 @@ const Shope = () => {
             }
         }
     }
-    const handleTryAgain = () => {
-        setSelectedBikes([])
-    }
+
     const handleChooseOne = () => {
         if (selectedBikes.length === 0) {
             return
