@@ -12,9 +12,9 @@ const SelectedBike = ({ selectedBike, removeSelectedBikes }) => {
             </div>
             <button
                 onClick={() => removeSelectedBikes(selectedBike)}
-                className="p-2"
+                className=" delete-btn"
             >
-                <FontAwesomeIcon className="me-5" icon={faTrashCan} />
+                <FontAwesomeIcon className="mt-2 mx-1 mb-1" icon={faTrashCan} />
             </button>
         </div>
     )
