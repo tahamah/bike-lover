@@ -47,6 +47,24 @@ const Shope = () => {
             setChooseOne(selectedBikes[rand])
         }
     }
+    let btnCommand
+    if (selectedBikes.length === 0) {
+        btnCommand = (
+            <h2 className="text-center fw-bolder mt-5 text-danger pt-5">
+                {' '}
+                Please Select Minimum One{' '}
+            </h2>
+        )
+    } else {
+        btnCommand = (
+            <ChooseTryBtn
+                chooseOne={chooseOne}
+                handleChooseOne={handleChooseOne}
+                handleTryAgain={handleTryAgain}
+            ></ChooseTryBtn>
+        )
+    }
+
     return (
         <div className="p-5 row">
             <div className="col-12 mb-5 col-md-9">
@@ -61,7 +79,9 @@ const Shope = () => {
                 </div>
             </div>
             <div className="selected-container col-12 col-md-3 ">
-                <h4 className=" text-center my-5">Selected Bike</h4>
+                <h3 className=" text-center fw-bolder pt-3 my-5">
+                    Selected Bike
+                </h3>
                 {selectedBikes.map((selectedBike) => (
                     <SelectedBike
                         key={selectedBike.id}
@@ -70,13 +90,7 @@ const Shope = () => {
                     ></SelectedBike>
                 ))}
 
-                <div className="mx-3 my-5">
-                    <ChooseTryBtn
-                        chooseOne={chooseOne}
-                        handleChooseOne={handleChooseOne}
-                        handleTryAgain={handleTryAgain}
-                    ></ChooseTryBtn>
-                </div>
+                <div className="mx-3 my-5">{btnCommand}</div>
             </div>
         </div>
     )

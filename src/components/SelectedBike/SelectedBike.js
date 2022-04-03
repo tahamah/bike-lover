@@ -8,7 +8,7 @@ const SelectedBike = ({ selectedBike, removeSelectedBikes }) => {
         <div className="ms-2 mb-3 selected-bike d-flex   align-items-center">
             <div className="d-flex align-items-center">
                 <img className="img-fluid w-25 me-3 rounded" src={img} alt="" />
-                <p className="m-0">{name}</p>
+                <p className="m-0">{name.slice(0, 12)}</p>
             </div>
             <button
                 onClick={() => removeSelectedBikes(selectedBike)}
